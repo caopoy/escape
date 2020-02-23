@@ -1,10 +1,17 @@
 ﻿// 逃亡.cpp : 定义应用程序的入口点。
-//
-
+//去ddf.h吧，解决方案资源管理器->头文件->ddf.h
+#include<windows.h>
 #include "framework.h"
 #include "逃亡.h"
 
 #define MAX_LOADSTRING 100
+
+
+
+//今天我们有这么几个计划
+// 1. 编写一个输出位图，读取地图，传送的类（我写输出位图+Timer）。
+// 2. 计算怪物的AI，就是最短路。（使用单权Floyd）
+// 3. 请测试“蒟蒻LIS”来测试
 
 // 全局变量:
 HINSTANCE hInst;                                // 当前实例
@@ -20,7 +27,7 @@ INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPWSTR    lpCmdLine,
-                     _In_ int       nCmdShow)
+                     _In_ int       nCmdShow)//不要乱搞！好的
 {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);

@@ -151,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ddf.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="逃亡.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ddf.cpp" />
     <ClCompile Include="逃亡.cpp" />
   </ItemGroup>
   <ItemGroup>
