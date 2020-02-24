@@ -24,8 +24,12 @@ bool ddf::loadFromTxt(wstring path)
 {
 	FILE* fp; _wfopen_s(&fp, path.c_str(), L"r");
 	if (!fp)return false;
-	int n, m;
-	fscanf_s(fp, "%d%d", &n, &m);
-	for (int i = 0; i < n; i++)
-		fgets(s[i], m + 1, fp);
+	fscanf_s(fp, "%d", &cnt);
+	for (int p = 0; p < cnt; p++)
+	{
+		fscanf_s(fp, "%d%d", &n, &m);
+		for (int i = 0; i < n; i++)
+			fgets(s[p][i], m + 1, fp);
+	}
+	
 }
